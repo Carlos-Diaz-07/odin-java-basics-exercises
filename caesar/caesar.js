@@ -1,4 +1,4 @@
-function comp(num) {
+function comp(num) {	// to adjust big shift factors
 	if (num > 26) {
 		return Math.round(num/-26);
 	} else if (num < -26) {
@@ -43,7 +43,5 @@ const caesar = function (string, key) {
 	}
 	return String.fromCharCode.apply(this, arr);
 };
-let string2 = "Z";
-console.log(-29 > 25 ? true : false)
-console.log(string2.charCodeAt(0));
+
 module.exports = caesar;
